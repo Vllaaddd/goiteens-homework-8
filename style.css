@@ -224,10 +224,6 @@ ul{
     padding: 0;
 }
 
-.info{
-    color: var(--text-color);
-}
-
 .logofooter{
     color: var(--secondary-color);
     font-family: Raleway, sans-serif;
@@ -410,4 +406,37 @@ border: 0.5px solid #ECECEC;
 
 .li-button:not(:last-child){
     margin-right: 8px;
+}
+
+.features-icon{
+    background-color: var(--grey);
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.nav-icons{
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.link-list .info:hover,
+.link-list .info:focus
+{
+    fill: var(--accent-color);
+}
+
+.team-sites{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 44px;
 }
