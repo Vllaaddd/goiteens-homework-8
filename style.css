@@ -298,7 +298,7 @@ ul{
 
 .images{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 
@@ -330,10 +330,17 @@ ul{
     box-shadow: 0px 1px 3px 0px #0000001F;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 428px;
 }
 
 .team_card:not(:last-child){
     margin-right: 30px;
+}
+
+.team_card img{
+    width: 270px;
+    height: 260px;
 }
 
 .line{
@@ -437,6 +444,44 @@ border: 0.5px solid #ECECEC;
 
 .team-sites{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 44px;
+}
+
+.li-sites:not(:last-child){
+    margin-right: 40px;
+}
+
+.klientu{
+    display: flex;
+}
+
+.div-klient{
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.klient-icon{
+    fill: #AFB1B8;
+}
+
+.klientu li:hover,
+.klientu li:focus
+{
+    fill: var(--accent-color);
+}
+
+.klient-li div:hover,
+.klient-li div:focus
+{
+    border: 1px solid var(--accent-color);
+}
+
+.klient-li:not(:last-child){
+    margin-right: 30px;
 }
