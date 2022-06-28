@@ -15,6 +15,7 @@ html{
     --secondary-link-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
     --grey: #F5F4FA;
+    --svg: #AFB1B8;
 }
 
 /* header */
@@ -112,6 +113,10 @@ html{
     letter-spacing: 0.03em;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.team_card img{
+    width: 200px;
 }
 
 .items-descritption{
@@ -445,11 +450,14 @@ border: 0.5px solid #ECECEC;
 .team-sites{
     display: flex;
     justify-content: center;
-    margin-bottom: 44px;
+}
+
+.people{
+    padding-bottom: 42px;
 }
 
 .li-sites:not(:last-child){
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 .klientu{
@@ -459,16 +467,16 @@ border: 0.5px solid #ECECEC;
 .div-klient{
     width: 170px;
     height: 90px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--svg);
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.klient-icon{
-    fill: #AFB1B8;
-}
+/* .klient-icon{
+    fill: var(--svg);
+} */
 
 .klientu li:hover,
 .klientu li:focus
@@ -484,4 +492,28 @@ border: 0.5px solid #ECECEC;
 
 .klient-li:not(:last-child){
     margin-right: 30px;
+}
+
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus
+{
+    fill: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
+.social-icon{
+    fill: var(--svg);
+}
+
+.social-icon:hover{
+    fill: var(--secondary-color);
 }
