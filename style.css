@@ -95,7 +95,7 @@ html{
     margin-left: 93px;
 }
 
-.head-title{
+.features-title{
     color: var(--primary-color);
     font-family: Roboto, sans-serif;
     font-weight: 700;
@@ -455,15 +455,32 @@ border: 0.5px solid #ECECEC;
     justify-content: center;
 }
 
+.social-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--svg);
+}
+
 .social-li:not(:last-child){
     margin-right: 10px;
 }
 
-.klientu{
+.social-link:hover,
+.social-link:focus
+{
+    fill: var(--secondary-color);
+    background-color: var(--accent-color);
+}
+
+.customers{
     display: flex;
 }
 
-.klient-a{
+.customers-link{
     width: 170px;
     height: 90px;
     border: 1px solid var(--svg);
@@ -474,38 +491,15 @@ border: 0.5px solid #ECECEC;
     fill: var(--svg);
 }
 
-.klient-a:hover
+.customers-link:hover,
+.customers-link:focus
 {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
-.klient-li:not(:last-child){
+.customers-li:not(:last-child){
     margin-right: 30px;
-}
-
-.social-link{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-}
-
-.social-link:hover,
-.social-link:focus
-{
-    fill: var(--secondary-color);
-    background-color: var(--accent-color);
-}
-
-.social-link{
-    fill: var(--svg);
-}
-
-.footer-icons{
-    display: flex;
 }
 
 .join{
@@ -522,20 +516,16 @@ border: 0.5px solid #ECECEC;
     color: var(--secondary-color);
 }
 
-.footer-icon{
+.footer-icons{
+    display: flex;
+}
+
+.footer .social-link{
+    background-color: rgba(255, 255, 255, 0.1);
     fill: var(--secondary-color);
 }
 
-.footer-social-link{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);;
-}
-
-.footer-social-link:hover{
+.footer .social-link:hover,
+.footer .social-link:focus{
     background-color: var(--accent-color);
 }
